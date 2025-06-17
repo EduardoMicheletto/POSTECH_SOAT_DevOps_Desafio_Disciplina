@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.4.5</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.dev.cicd</groupId>
 	<artifactId>data</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Hands-on-ci-cd-for-springboot-apps</name>
 	<description>Demo project for Spring Boot with CI/CD</description>
+
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/EduardoMicheletto/POSTECH_SOAT_DevOps_Desafio_Disciplina</url>
+		</repository>
+	</distributionManagement>
+
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -35,9 +46,9 @@
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-deploy-plugin -->
 		<dependency>
-		    <groupId>org.apache.maven.plugins</groupId>
-		    <artifactId>maven-deploy-plugin</artifactId>
-		    <version>2.8.2</version>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-deploy-plugin</artifactId>
+			<version>2.8.2</version>
 		</dependency>
 	</dependencies>
 
