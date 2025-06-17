@@ -12,6 +12,7 @@ jobs:
 
     - name: Package
       run: mvn package
+      
   publish:
     runs-on: ubuntu-latest
     needs: build
